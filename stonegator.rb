@@ -23,10 +23,11 @@ rule_info = {}
     rule_info[:source]        = rules.xpath("./match_sources/match_source_ref/@value").map(&:text).join("\r")
     rule_info[:destination]   = rules.xpath("./match_destinations/match_destination_ref/@value").map(&:text).join("\r")
     rule_info[:service]       = rules.xpath("./match_services/match_service_ref/@value").map(&:text).join("\r")
-
+	puts "Processing Rule Number " + rule_info[:rulenumber].to_s + " In Policy " + rule_info[:name].to_s
     
     csv << rule_info.values
       end
     end
   end
 end	
+puts "Finished, please check rules.csv in the folder you ran the script from!"
