@@ -5,4 +5,5 @@ Usage is simple, just ./stonrgator.rb rules.xml. It will dump the rules.csv file
 
 Requirements:
 csv (ships with Ruby)
+
 nokogiri - gem install nokogiri
