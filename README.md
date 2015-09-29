@@ -4,5 +4,5 @@ it into an Excel compatible CSV file so that you can do rule reviews easily, or 
 Usage is simple, just ./stonrgator.rb rules.xml. It will dump the rules.csv file to the directory you run the script from.
 
 Requirements:
-csv (ships with Ruby_
+csv (ships with Ruby)
 nokogiri - gem install nokogiri
